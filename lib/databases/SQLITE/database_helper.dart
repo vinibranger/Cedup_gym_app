@@ -31,7 +31,6 @@ class DatabaseHelper {
         id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
         braco TEXT,
         tronco TEXT,
-        imc TEXT,
         perna TEXT,
         peso TEXT,
         altura TEXT,
@@ -51,14 +50,13 @@ class DatabaseHelper {
     return id;
   }
 
-  // Read all items
+
   static Future<List<Map<String, dynamic>>> getItems() async {
     final db = await DatabaseHelper.db();
     return db.query('exercicio', orderBy: "id");
   }
 
-  // Get a single item by id
-  //We dont use this method, it is for you if you want it.
+
   static Future<List<Map<String, dynamic>>> getItem(int id) async {
     final db = await DatabaseHelper.db();
     return db.query('exercicio', where: "id = ?", whereArgs: [id], limit: 1);
@@ -104,8 +102,7 @@ class DatabaseHelper {
     return db.query('avfisica', orderBy: "id");
   }
 
-  // Get a single item by id
-  //We dont use this method, it is for you if you want it.
+
   static Future<List<Map<String, dynamic>>> getAvalia(int id) async {
     final db = await DatabaseHelper.db();
     return db.query('avfisica', where: "id = ?", whereArgs: [id], limit: 1);

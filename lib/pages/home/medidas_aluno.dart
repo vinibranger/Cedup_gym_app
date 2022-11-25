@@ -55,12 +55,12 @@ class _MedidaAlunosState extends State<MedidaAlunos> {
     if (id != null) {
       final existingData =
           meuDataBase.firstWhere((element) => element['id'] == id);
-      pesoAluno.text = existingData['nome_exe'];
-      alturaAluno.text = existingData['descris'];
-      bracoAluno.text = existingData['descris'];
-      troncoAluno.text = existingData['descris'];
-      pernasAluno.text = existingData['descris'];
-      dateAvali.text = existingData['descris'];
+      pesoAluno.text = existingData['peso'];
+      alturaAluno.text = existingData['altura'];
+      bracoAluno.text = existingData['braco'];
+      troncoAluno.text = existingData['tronco'];
+      pernasAluno.text = existingData['perna'];
+      dateAvali.text = existingData['data'];
     } else {
       pesoAluno.text = "";
       alturaAluno.text = "";
@@ -247,7 +247,7 @@ class _MedidaAlunosState extends State<MedidaAlunos> {
                                 ScaffoldMessenger.of(context).showSnackBar(
                                     const SnackBar(
                                         content: Text('Salvo com sucesso')));
-                              }
+                            }
                             },
                           ),
                         ),

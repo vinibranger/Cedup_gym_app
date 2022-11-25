@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 
 import '../home_widgets/home_drawer.dart';
-import 'database_helper.dart';
+import '../../../databases/SQLITE/database_helper.dart';
 
 class CadExerci extends StatefulWidget {
   const CadExerci({Key? key}) : super(key: key);

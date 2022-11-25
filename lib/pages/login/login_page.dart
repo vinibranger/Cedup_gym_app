@@ -34,9 +34,9 @@ class _LoginPageState extends State<LoginPage> {
         actionButton = 'Login';
         toggleButton = 'Ainda não tem conta? Cadastre-se agora.';
       } else {
-        titulo = 'Crie sua conta';
-        actionButton = 'Cadastrar';
-        toggleButton = 'Voltar ao Login.';
+        // titulo = 'Crie sua conta';
+        // actionButton = 'Cadastrar';
+        // toggleButton = 'Voltar ao Login.';
       }
     });
   }
@@ -52,16 +52,16 @@ class _LoginPageState extends State<LoginPage> {
     }
   }
 
-  registrar() async {
-    setState(() => loading = true);
-    try {
-      await context.read<AuthService>().registrar(email.text, senha.text);
-    } on AuthException catch (e) {
-      setState(() => loading = false);
-      ScaffoldMessenger.of(context)
-          .showSnackBar(SnackBar(content: Text(e.message)));
-    }
-  }
+  // registrar() async {
+  //   setState(() => loading = true);
+  //   try {
+  //     await context.read<AuthService>().registrar(email.text, senha.text);
+  //   } on AuthException catch (e) {
+  //     setState(() => loading = false);
+  //     ScaffoldMessenger.of(context)
+  //         .showSnackBar(SnackBar(content: Text(e.message)));
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -126,8 +126,8 @@ class _LoginPageState extends State<LoginPage> {
                       if (formKey.currentState!.validate()) {
                         if (isLogin) {
                           login();
-                        } else {
-                          registrar();
+                          // } else {
+                          //   registrar();
                         }
                       }
                     },
