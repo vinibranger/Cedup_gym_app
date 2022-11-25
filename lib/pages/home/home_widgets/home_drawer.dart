@@ -9,14 +9,19 @@ import '../../login/login_page.dart';
 
 Drawer getHomeDrawer(Type buildContext, BuildContext context) {
   return Drawer(
-    child: ListView(
+
+    child:
+     ListView(
       padding: EdgeInsets.zero,
+      
       children: [
+        
         const UserAccountsDrawerHeader(
           decoration: BoxDecoration(color: Color(0xff0A6D92)),
           currentAccountPicture: CircleAvatar(
             backgroundColor: Colors.white,
           ),
+          
           accountEmail: null,
           accountName: null,
         ),
