@@ -107,13 +107,13 @@ class _MedidaAlunosState extends State<MedidaAlunos> {
                         ),
                         Container(
                           child: TextFormField(
-                            keyboardType: TextInputType.datetime,
+                            keyboardType: TextInputType.text,
                             decoration:
-                                Input_decore().textInputDecoration('DATA'),
+                                Input_decore().textInputDecoration('MÊS'),
                             controller: dateAvali,
                             validator: (val) {
                               if (val!.isEmpty) {
-                                return "INSIRA A DATA!";
+                                return "INSIRA O MÊS!";
                               }
                               return null;
                             },

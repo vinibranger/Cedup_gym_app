@@ -14,11 +14,6 @@ class AlunoRepository {
         icone_aluno: 'assets/user.png', name: 'Pedro', genero: 'Masculino'),
     Aluno_cliente(
         icone_aluno: 'assets/user.png', name: 'Tawny', genero: 'Feminino'),
-    Aluno_cliente(
-        icone_aluno: 'assets/user.png', name: 'Carolina', genero: 'Feminino'),
-    Aluno_cliente(
-        icone_aluno: 'assets/user.png', name: 'Éder', genero: 'Feminino'),
-    Aluno_cliente(
-        icone_aluno: 'assets/user.png', name: 'Marta', genero: 'Feminino'),
+
   ];
 }
