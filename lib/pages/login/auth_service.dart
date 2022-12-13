@@ -22,6 +22,18 @@ class AuthService extends ChangeNotifier {
       notifyListeners();
     });
   }
+   login(String email, String senha) async {
+    try {
+      await _auth.signInWithEmailAndPassword(email: email, password: senha);
+      _getUser();
+    } on FirebaseAuthException catch (e) {
+      if (e.code == 'user-not-found') {
+        throw AuthException('Email não encontrado. Cadastre-se.');
+      } else if (e.code == 'wrong-password') {
+        throw AuthException('Senha incorreta. Tente novamente');
+      }
+    }
+  }
 
   _getUser() {
     usuario = _auth.currentUser;
@@ -41,18 +53,7 @@ class AuthService extends ChangeNotifier {
     }
   }
 
-  login(String email, String senha) async {
-    try {
-      await _auth.signInWithEmailAndPassword(email: email, password: senha);
-      _getUser();
-    } on FirebaseAuthException catch (e) {
-      if (e.code == 'user-not-found') {
-        throw AuthException('Email não encontrado. Cadastre-se.');
-      } else if (e.code == 'wrong-password') {
-        throw AuthException('Senha incorreta. Tente novamente');
-      }
-    }
-  }
+ 
 
   logout() async {
     await _auth.signOut();
