@@ -1,16 +1,26 @@
-# viniciustcc
+# aplicativo-gerenciamento-treino
 
-TCC CEDUP VINICIUS BRANGER
+Aplicativo para personal ter um melhor acompanhamento do aluno :
 
-## Getting Started
+* Nível de acesso
+* Grafico mostrando a evolução 
+* CRUD  
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+<img src="https://github.com/vinibranger/sistema-gerenciamento-estoque/blob/main/Telas/tela%20logi.png" width="500" width="auto"><img src="https://github.com/vinibranger/sistema-gerenciamento-estoque/blob/main/Telas/tela%20inial.png" width="500" width="auto">
+<img src="https://github.com/vinibranger/sistema-gerenciamento-estoque/blob/main/Telas/consuestoq.png" width="500" width="auto">
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## O que precisa para rodar
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* Importe o arquivo e inicie na sua IDE 
+
+### Pré Requisitos
+
+* Flutter 3.3.3
+
+
+
+
+## License
+
+Vinícius Branger
