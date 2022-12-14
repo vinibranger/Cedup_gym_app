@@ -7,8 +7,9 @@ Aplicativo para personal ter um melhor acompanhamento do aluno :
 * CRUD  
 
 
-<img src="https://github.com/vinibranger/sistema-gerenciamento-estoque/blob/main/Telas/tela%20logi.png" width="500" width="auto"><img src="https://github.com/vinibranger/sistema-gerenciamento-estoque/blob/main/Telas/tela%20inial.png" width="500" width="auto">
-<img src="https://github.com/vinibranger/sistema-gerenciamento-estoque/blob/main/Telas/consuestoq.png" width="500" width="auto">
+<img src="https://github.com/vinibranger/Cedup_gym_app/blob/main/fotos/avalia%C3%A7%C3%A3o.png" width="500" width="auto">
+<img src="https://github.com/vinibranger/Cedup_gym_app/blob/main/fotos/Screensh.png" width="500" width="auto">
+<img src="https://github.com/vinibranger/Cedup_gym_app/blob/main/fotos/grafico.png" width="500" width="auto">
 
 ## O que precisa para rodar
 
